@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8"/>
+<script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
+<script>
+$(function(){
+	$("button").on("click",function(){
+		$("h1").addClass("red");
+	});
+});
+</script>
+<style>
+.red {background-color:red;}
+</style>
+<body>
+<button>click me!</button>
+<!-- h1の色を赤に -->
+<h1>I want to be red!</h1>
+</body>
+</html>

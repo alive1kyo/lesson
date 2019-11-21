@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8"/>
+<script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
+<script>
+$(function(){
+	$("button").on("click",function(){
+		$("*").removeClass();
+		$("td:contains(kobe)").addClass("selected");
+	});
+});
+</script>
+<style>
+table {margin: 5px;}
+table, tr, td {border: solid black 1px;}
+.selected {background-color:yellow;}
+</style>
+<body>
+<button>kobe だけ黄色にして！</button>
+<table id="list1">
+<tr class='selected'><td>kyoto</td><td>kyoto</td></tr>
+<tr><td>shiga</td><td>oo2</td></tr>
+</table>
+<table id="list2">
+<tr class='selected'><td>osaka</td><td>osaka</td></tr>
+<tr><td>hyogo</td><td>kobe</td></tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8"/>
+<script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
+<script>
+$(function(){
+	$("#imgfile").on("change",function(evt){
+	var file = evt.target.files;
+	alert(file[0].name + "を取得しました。");
+	},false);
+
+});
+</script>
+<style>
+table {margin: 5px;}
+table, tr, td {border: solid black 1px;}
+.selected {background-color:yellow;}
+</style>
+<body>
+<button>kobe だけ黄色にして！</button>
+<input type="file" id="imgfile">
+</body>
+</html>
