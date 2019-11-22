@@ -1,47 +1,61 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
+<title>lesson004</title>
 <meta charset="utf-8"/>
-<script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
+<script src="../js/jquery-3.4.1.min.js"></script>
 <script>
 $(function(){
-	$("div.sml").on("click",function(){
-        // 
+    $(".f-item").on("click",function(){
+        // <div id='div5'>にクリックしたf-itemの色と文字を表示させよう
+        var str = $(this).text();
+        var bgc = $(this).css("background-color");
+        $("#div5").text(str).css("background-color",bgc);
     });
 });
 </script>
 <style>
 .f-container {
-    display:-webkit-flex;
     display:flex;
     flex-direction: row;
 }
 .f-item{
-   
-}
-div.sml {
     width: 100px;
     height: 100px;
     margin-top: 10px;
-
+    margin-right: 5px;
+    font-size: 26px;
+    color: white;
+    text-align: center;
+    vertical-align: center;
     }
 div.lrg {
     width: 200px;
     height: 200px;
     margin-top: 10px;
+    font-size: 32px;
+    color: white;
     }    
 #div1 {
     background-color: blueviolet;
 }
-hr {clear: both;}
+#div2 {
+    background-color: blue;
+}
+#div3 {
+    background-color: green;
+}
+#div4 {
+    background-color: palevioletred;
+}
 </style>
 </head>
 <body>
 <div class="f-container">
-    <div id='div1' class='f-item sml'></div>
-    <div id='div2' class='f-item sml'></div>
-    <div id='div3' class='f-item sml'></div>
-    <div id='div4' class='f-item sml'></div>
+    <div id='div1' class='f-item'>a</div>
+    <div id='div2' class='f-item'>b</div>
+    <div id='div3' class='f-item'>c</div>
+    <div id='div4' class='f-item'>d</div>
 </div>
 <hr>
 <div id='div5' class='lrg'></div>
