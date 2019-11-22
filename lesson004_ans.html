@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8"/>
+<script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
+<script>
+$(function(){
+	$("div.sml").on("click",function(){
+        // 
+    });
+});
+</script>
+<style>
+.f-container {
+    display:-webkit-flex;
+    display:flex;
+    flex-direction: row;
+}
+.f-item{
+   
+}
+div.sml {
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+
+    }
+div.lrg {
+    width: 200px;
+    height: 200px;
+    margin-top: 10px;
+    }    
+#div1 {
+    background-color: blueviolet;
+}
+hr {clear: both;}
+</style>
+</head>
+<body>
+<div class="f-container">
+    <div id='div1' class='f-item sml'></div>
+    <div id='div2' class='f-item sml'></div>
+    <div id='div3' class='f-item sml'></div>
+    <div id='div4' class='f-item sml'></div>
+</div>
+<hr>
+<div id='div5' class='lrg'></div>
+</body>
+</html>
